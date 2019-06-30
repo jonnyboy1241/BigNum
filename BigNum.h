@@ -30,6 +30,18 @@ namespace BigNum
         void printNum();
         void printError();
 
+        // Unary increment and decrement ++, -- (prefix and postfix)
+        // Arithmetic operators +, -, *, /,%
+        BigNum operator + (BigNum const &value);
+
+        // Releational operators: <, <=, >, >=, ==, !=
+        bool operator == (BigNum const &value);
+        bool operator != (BigNum const &value);
+        // bool operator >= (BigNum const &value);
+        // bool operator <= (BigNum const &value);
+        // bool operator > (BigNum const &value);
+        // bool operator < (BigNum const &value);
+
     };
 }
 

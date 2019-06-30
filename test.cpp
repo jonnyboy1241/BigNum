@@ -5,19 +5,10 @@
 
 int main()
 {
-    std::string str;
+    BigNum::BigNum one("123"), two("877");
 
-    do
-    {
-        std::getline(std::cin, str);
-        if(!str.compare("end"))
-            break;
-        BigNum::BigNum bn(str);
-        bn.printNum();
-    }
-    while( 1 );
+    (one + two).printNum();
+    std::cout << std::endl;
 
-    std::cout << "Press any key to continue . . . " << std::endl;
-    getchar();
     return 0;
 }
