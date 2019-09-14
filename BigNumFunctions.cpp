@@ -1,6 +1,3 @@
-#include <iostream>
-#include <string>
-
 #include "BigNum.h"
 
 namespace BigNum
@@ -44,7 +41,5 @@ namespace BigNum
         {
             std::cout << (int)this->num[iterator];
         }
-
-        std::cout << std::endl;
     }
 }

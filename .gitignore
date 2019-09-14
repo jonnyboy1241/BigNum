@@ -1,3 +1,4 @@
 BigNum
 test.cpp
 Makefile
+*.o

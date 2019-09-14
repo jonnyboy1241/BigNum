@@ -1,6 +1,5 @@
 // This file includes all of the different constructors for BigNum
 #include <cstring>
-#include <iostream>
 
 #include "BigNum.h"
 

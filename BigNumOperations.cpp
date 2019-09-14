@@ -1,7 +1,4 @@
 // This file includes the operator overloading for BigNum
-#include <string>
-#include <iostream>
-
 #include "BigNum.h"
 
 namespace BigNum
@@ -26,6 +23,34 @@ namespace BigNum
     bool BigNum::operator != (BigNum const &value)
     {
         return !(*this == value);
+    }
+
+    bool BigNum::operator > (BigNum const &value)
+    {
+        for(int i = 0; i <= NUM_MAX_BOUND; i++)
+            if(this->num[i] > value.num[i])
+                return true;
+
+        return false;
+    }
+
+    bool BigNum::operator < (BigNum const &value)
+    {
+        for(int i = 0; i <= NUM_MAX_BOUND; i++)
+            if(this->num[i] < value.num[i])
+                return true;
+
+        return false;
+    }
+
+    bool BigNum::operator >= (BigNum const &value)
+    {
+        return ((*this > value) || (*this == value));
+    }
+
+    bool BigNum::operator <= (BigNum const &value)
+    {
+        return ((*this < value) || (*this == value));
     }
 
     BigNum BigNum::operator + (BigNum const &value)
