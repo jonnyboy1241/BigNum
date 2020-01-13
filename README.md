@@ -21,6 +21,6 @@ BigNum is a C++ library that handles arithmetic and relational operations for la
 
 ## Versions
 ### Active:
-Unsigned BigNum is currently under development on the branch unsigned-master
+Unsigned BigNum is currently under development on the branch Unsigned-master
 ### Tentative:
 Signed BigNum
